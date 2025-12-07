@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// Hapus object options {}, cukup URL saja
+
 mongoose.connect('mongodb://localhost:27017/dbkursus')
   .then(() => console.log('Terhubung ke MongoDB'))
   .catch(err => console.error('Gagal koneksi MongoDB:', err));
